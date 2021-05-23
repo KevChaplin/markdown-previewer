@@ -1,0 +1,91 @@
+.App {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.app-header {
+  background-color: #3b2b63;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+#help-btn {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  left:60px;
+  top: 8px;
+  height: 30px;
+  width: 42px;
+  background-position: center;
+  background-size: cover;
+}
+
+#help-btn:hover {
+  cursor: pointer;
+}
+
+#help-box {
+  color: black;
+  font-size:14px;
+  background-color: #ffeb99;
+  margin: 10px;
+  min-width: 90vw;
+  border: 2px solid black;
+  padding: 10px 10px;
+}
+
+#converter {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-evenly;
+  align-items: top;
+}
+
+.window {
+  margin: 10px;
+  min-width: 90vw;
+  min-height: 80vh;
+  border: 2px solid black;
+  padding: 10px 10px
+}
+
+a {
+  color: red;
+  text-decoration: none
+}
+
+@media only screen and (min-width: 768px) and (min-height: 600px) {
+  #converter {
+    flex-direction: row;
+  }
+
+  #help-box {
+    height: auto;
+    width: auto;
+    min-width: 0px;
+    padding: 0px 10px;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  #help-btn {
+    height: 45px;
+    width: 63px;
+  }
+
+  .window {
+    min-width: 40vw;
+  }
+
+}
