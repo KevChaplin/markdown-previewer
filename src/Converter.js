@@ -48,13 +48,14 @@ class Converter extends React.Component {
           id="preview"
           className="window">
           <ReactMarkdown plugins={[breaks]}>{this.state.inputText}</ReactMarkdown>
-          //react-markdown used for converting input text to Markdown
-          //remark-breaks used to detect line-breaks
         </div>
       </div>
     )
   }
 }
+// react-markdown used for converting input text to Markdown
+// remark-breaks used to detect line-breaks
+
 
 const defaultText = `# Wow big writing!
 ## Not so big writing
